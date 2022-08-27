@@ -2,7 +2,7 @@ class Control:
     def __init__(self):
         self.__tv=None
         
-    def getTV(self):
+    def getTv(self):
         return self.__tv
         
     def setTV(self,tv):
