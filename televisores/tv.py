@@ -45,8 +45,8 @@ class TV:
     def getNumTV(cls):
         return cls.__numTV
         
-    def setNumTV(cls,numTV):
-        cls.__numTV=numTV
+    def setNumTV(cls,numeroTV):
+        cls.__numTV=numeroTV
 
     def getEstado(self):
         return self.__estado
@@ -63,7 +63,7 @@ class TV:
 
     def canalDown(self):
         if self.__canal>1 and self.__estado==True:
-            self.__canal=self._canal-1
+            self.__canal=self.__canal-1
     
     def volumenUp(self):
        if self.__volumen<7 and self.__estado==True:
