@@ -7,7 +7,7 @@ class TV:
         self.__canal=1
         self.__volumen=1
         self.__precio=500
-        self.numTV+=1
+        TV.numTV+=1
         self.__control=None
 
     def getMarca(self):
@@ -42,11 +42,13 @@ class TV:
         if (volumen<=7 and volumen>=0) and self.__estado==True:
             self.__volumen=volumen
     
+    @classmethod
     def getNumTV(cls):
-        return cls.__numTV
-        
+        return cls.numTV
+    
+    @classmethod
     def setNumTV(cls,numeroTV):
-        cls.__numTV=numeroTV
+        cls.numTV=numeroTV
 
     def getEstado(self):
         return self.__estado
