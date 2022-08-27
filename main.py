@@ -8,7 +8,7 @@ if __name__ == "__main__":
 
     tv1 = TV(marca1, True)
     tv2 = TV(marca2, False)
-    
+
 
     tv1.setPrecio(2000)
     tv2.setCanal(90)
